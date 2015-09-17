@@ -1,0 +1,85 @@
+nav{
+	width: 20%;
+	
+	height: 100vh;
+	float:left;
+	position: fixed;
+}
+
+.content{
+	
+	float: right;
+	padding: 30px 50px;
+	width: 73%;
+}
+a, li {
+	list-style: none;
+	text-decoration: none;
+	color: inherit;
+	padding:0;
+	margin: 0;
+}
+
+.red {
+	color: red;
+}
+.logo {
+	background-image: url(../media/logo.png);
+	width: 300px;
+	height: 200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.admin{
+	color: red;
+}
+
+.chris {
+	text-align: center;
+}
+/*--------------------------portfolio template---------------------------*/
+.dogPhoto {
+	background-image: url(../media/dog.png);
+	width: 600px;
+	height: 420px;
+	
+}
+.hills {
+	background-image: url(../media/hills.png);
+	width: 600px;
+	height: 420px;
+
+}
+.railroad {
+	background-image: url(../media/railroad.png);
+	width: 600px;
+	height: 420px;
+
+}
+
+/*----------------------------BLOG template--------------------------------*/
+.blog-posts{
+	padding:40px 100px;
+	border-bottom: 1px solid lightgray;
+}
+/*----------------------------Bio template--------------------------------*/
+.chris-bio-photo{
+	background-image: url(../media/chris.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 800px;
+	height: 300px;
+
+
+}
+
+/*----------------------------Admin template--------------------------------*/
+
+.inputPost {
+	margin-top: 20px;
+	width: 50%;
+	height:300px;
+}
+
+
+
