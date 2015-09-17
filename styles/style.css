@@ -61,6 +61,7 @@ a, li {
 .blog-posts{
 	padding:40px 100px;
 	border-bottom: 1px solid lightgray;
+	width:80%;
 }
 /*----------------------------Bio template--------------------------------*/
 .chris-bio-photo{
@@ -75,6 +76,12 @@ a, li {
 
 /*----------------------------Admin template--------------------------------*/
 
+.allData {
+	color: red;
+}
+.allDataTrue{
+	color: green;
+}
 .inputPost {
 	margin-top: 20px;
 	width: 50%;
