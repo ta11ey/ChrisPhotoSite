@@ -5,26 +5,32 @@ angular.module('myApp').controller('adminCtrl', function($scope, adminService, $
 
 	$scope.items = $firebaseArray(new Firebase(url + '/items'));
 	$scope.allData = false;
-	$scope.allDataTrue= false;
-
-	$scope.addPost = function(postDate, postPost, postTitle){
-		if (postDate && postTitle && postPost){
-	 		$scope.items.$add({date:postDate, post:postPost,title:postTitle});
-	 		$scope.allData = false;
-	 		$scope.allDataTrue = true;
-	 		$scope.date = "";
-	 		$scope.post = "";
-	 		$scope.title= "";
-
-	 	}
-
-	 	else if (!postDate || !postPost || !postTitle){
-	 		$scope.allData = true;
-	 	}
-
-
-
 	
-	 }
+	$scope.addPost = adminService.addPost;
+	$scope.formShow = false;
+	$scope.formButtonWords = 'Show'
+
+	$scope.showForm = function(){
+		if(!$scope.formShow){
+			$scope.formShow = true;
+			$scope.formButtonWords = 'Hide'
+		}
+		else{
+			$scope.formShow = false;
+			$scope.formButtonWords = 'Show'
+		}
+	}
+
+	$scope.toggleClear = function() {
+		if ($scope.date && $scope.post && $scope.title){
+			$scope.title = "";
+			$scope.post = "";
+			$scope.date = "";
+			$scope.allData=false;
+		}
+
+		else {$scope.allData=true}
+	}
+	
 
 })

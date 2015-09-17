@@ -1,17 +1,17 @@
-<div ng-controller ='adminCtrl'>
-<div class="enterPost">new blog post</div>
-</br>
 
-<input  placeholder= "Date" ng-model ='date'></input>
+<h3 class="enterPost">Enter new blog post</h3>
+ <button class = "display-add-post" ng-click = "showForm()">{{formButtonWords}}</button>
+</br>
+<div class = 'postDiv' ng-show = "formShow">
+<input  placeholder= "Date" ng-model ='date'></input> 
 <input placeholder= "Title" ng-model = "title"></input>
 </br>
 <textarea class=inputPost ng-model = 'post'></textarea>
 </br>
-<button ng-click = 'addPost(date, post, title)'>Submit Post</button>
+<button ng-click = 'addPost(date, post, title); toggleClear()'>Submit Post</button>
 </br>
 </br>
-<div class='allData' ng-show = 'allData'>Please make sure all fields have data</div>
-<div class='allDataTrue' ng-show = 'allDataTrue'>Added Succesfully!</div>
+<div class='allData' ng-show = 'allData' >Please make sure all fields have data</div>
 </div>
 
 
