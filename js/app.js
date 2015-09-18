@@ -3,6 +3,11 @@ var app = angular.module('myApp', ['ngRoute', 'firebase']);
 app.config(function($routeProvider){
 	$routeProvider
 		.when('/home', {
+			templateUrl: 'js/home/home.html',
+			controller: 'homeCtrl',
+			css: 'styles/home.css'
+		})
+		.when('/portfolio', {
 			templateUrl: 'js/portfolio/portfolioTmp.html',
 			controller: 'portfolioCtrl'
 		})

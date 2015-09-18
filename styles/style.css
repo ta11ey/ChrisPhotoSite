@@ -1,14 +1,17 @@
+/**{
+	font-family: 'Old Standard TT', serif;
+	border: 1px solid blue;
+}*/
 nav{
-	width: 20%;
+	width: 15%;
 	
 	height: 100vh;
 	float:left;
-	position: fixed;
 }
 
 .content{
 	
-	float: right;
+	float: left;
 	padding: 30px 50px;
 	width: 73%;
 }
@@ -24,25 +27,27 @@ a, li {
 	color: red;
 }
 .logo {
-	/*background-image: url(../media/logo2.png);*/
-/*	border:1px solid blue;
-*/	width: 300px;
-	height: 200px;
+	width: 100%;
 	
 }
-div img {
-/*	border:1px solid blue;
-*/	height: 150px;
+.logo img {
+	height: 150px;
 	width: 100px;
 	margin-top: 10%;
-	margin-left:20%}
+	margin-left:20%
+}
 .admin{
 	color: red;
 }
 
-.chris {
-	text-align: center;
+/*---------------------------home---------------------------------------*/
+.home-background {
+	background-image: url(https://images.unsplash.com/photo-1425141750113-187b6a13e28c?q=80&fm=jpg&s=eeb42b31a13f5cbd25368fa0695e5d08);
+	background-size: contain;
+	width: 100%;
+	height: 95vh;
 }
+
 /*--------------------------portfolio template---------------------------*/
 .dogPhoto {
 	background-image: url(../media/dog.png);
@@ -70,14 +75,14 @@ div img {
 	width:80%;
 }
 /*----------------------------Bio template--------------------------------*/
-.chris-bio-photo{
-	background-image: url(../media/chris.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 800px;
+.chris-bio-photo img{
+	width: 500px;
 	height: 300px;
+	float: right;
+}
 
-
+.bioText {
+	width: 60%;
 }
 
 /*----------------------------Admin template--------------------------------*/
