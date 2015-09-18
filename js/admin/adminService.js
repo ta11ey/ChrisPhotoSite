@@ -2,7 +2,7 @@ angular.module('myApp').service('adminService', function($firebaseArray, $q){
 
 	var url = 'https://chrisblashillphoto.firebaseio.com/';
 
-	var items = $firebaseArray(new Firebase(url + '/items'));
+	var items = $firebaseArray(new Firebase(url + '/blogPosts'));
 
 	this.addPost = function(postDate, postPost, postTitle){
 		var defer = $q.defer;

@@ -1,9 +1,7 @@
 angular.module('myApp').controller('adminCtrl', function($scope, adminService, $firebaseArray){
 	// var ref = new Firebase('https://chrisblashillphoto.firebaseio.com/');
 
-	var url = 'https://chrisblashillphoto.firebaseio.com/';
-
-	$scope.items = $firebaseArray(new Firebase(url + '/items'));
+	
 	$scope.allData = false;
 	
 	$scope.addPost = adminService.addPost;

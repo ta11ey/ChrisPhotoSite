@@ -1,4 +1,14 @@
 angular.module('myApp').controller('blogCtrl', function($scope, blogService){
-	$scope.blogPost = blogService.blogPost;
+	// $scope.returnedBlogPosts = blogService.getBlogPosts;
+		
+		
+		$scope.getPostData = function () {
+			blogService.getBlogPosts().then(function (response) {
+					$scope.posts = response;
+				})
+			}
+		$scope.getPostData();
+		
+
 	
 })
