@@ -6,22 +6,26 @@ Login:
 </div>
 
 
-<div class="securedContent">
+<div class="securedContent" class = "animated fadeInLeft">
 
-<h3 class="enterPost">Enter new blog post</h3>
- <button class = "display-add-post" ng-click = "showForm()">{{formButtonWords}}</button>
-</br>
-<div class = 'postDiv' ng-show = "formShow">
-<input  placeholder= "Date" ng-model ='date'></input> 
-<input placeholder= "Title" ng-model = "title"></input>
-</br>
-<textarea class=inputPost ng-model = 'post'></textarea>
-</br>
-<button ng-click = 'addPost(date, post, title); toggleClear()'>Submit Post</button>
-</br>
-</br>
-<div class='allData' ng-show = 'allData' >Please make sure all fields have data</div>
-</div>
+	<h3 class="enterPost animated fadeIn">Enter new blog post</h3>
+	 <button class = "display-add-post animated fadeIn" ng-click = "showForm()">{{formButtonWords}}</button>
+
+	<div class = 'postDiv' ng-show = "formShow">
+		<input class='adminData' placeholder= "Date" ng-model ='date'></input>
+		</br>
+		<input class='adminData' placeholder= "Title" ng-model = "title"></input>
+		</br>
+		<textarea class= 'inputPost' ng-model = 'post' ng-animate = 'animate'></textarea>
+		</br>
+		<button ng-click = 'addPost(date, post, title); toggleClear()'>Submit</button>
+		
+		<div class='allData' ng-show = 'allData' >Please make sure all fields have data</div>
+	</div>
+	<div class="display-add-photo">
+		<h3 class="enterPost animated fadeIn">Add new photo</h3>
+		<button class = "display-add-post animated fadeIn">{{formButtonWords}}</button>
+	</div>
 </div>
 
 
