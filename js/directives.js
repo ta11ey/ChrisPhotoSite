@@ -1,10 +1,9 @@
 angular.module('myApp')
-
 .directive('hover', function(){
 	return{
 		restrict:'A',
 		scope: {
-			toggle:' @',
+			toggle:'@',
 			toggleOff:'@'
 		},
 		link: function (scope, elem, attrs){
